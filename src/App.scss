@@ -1,0 +1,66 @@
+@import
+    url('https://fonts.googleapis.com/css2?family=Grandstander:wght@700&family=Raleway:wght@900&display=swap');
+
+$dark: #324235;
+$light: #789c80;
+
+$shadow: 1px 1px 10px 2px darken($light, 10%);
+$border: 1px solid darken($light, 35%);
+
+
+body {
+    background-color: lighten($light, 5%);
+    margin: 10px 0;
+} 
+
+.heading {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.outer-window {
+    width: 700px;
+    background-color: lighten($light, 20%);
+    border: $border;
+    box-shadow: $shadow;
+    .window-heading {
+        position: relative;
+        background-color: lighten($dark, 15%);
+        padding: 4px 4px 3px 3px;
+        font-family: 'Grandstander', cursive;
+        font-size: 25px;
+        border: $border;
+        margin: 0px;
+        text-align: center;
+        border: $border;
+    box-shadow: $shadow;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#editor {
+    width: 98%;
+    height: 90%;
+    border: $border;
+    box-shadow: $shadow;
+}
+
+#preview {
+    width: 99%;
+    height: 94%;
+    border: $border;
+    box-shadow: $shadow;
+    background-color: lighten($light, 30%);
+}
